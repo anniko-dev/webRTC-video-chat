@@ -1,5 +1,13 @@
-function App() {
-  return <>hello</>;
-}
+import { AppBar, Typography } from '@mui/material';
+import { VideoPlayer } from './components';
 
-export default App;
+export const App = () => {
+  return (
+    <>
+      <AppBar position={'static'}>
+        <Typography>Meets</Typography>
+      </AppBar>
+      <VideoPlayer />
+    </>
+  );
+};
